@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS VARIABLES */
+:root{
+    --header-shadow: 4px 10px 40px rgba(146, 146, 146, 0.2);
+    --black-color: #222;
+    --menu-hover-color: #FF6666;
+    --mobile-menu-shadow: 0 0 8px #ddd;
+    --white-color: #fff;
+    --span: #0ef;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1f242d;
+    color: var(--white-color);
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+
+/* HEADER SECTION START */
+.header-section{
+
+}
+.header-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px 5px 15px;
+    box-shadow: var(--header-shadow);
+    border-radius: 10px;
+}
+.logo a{
+    font-size: 30px;
+    color: var(--menu-color);
+}
+.nav-menu nav ul {
+    margin: 0;
+}
+.nav-menu nav ul li{
+    display: inline-block;
+}
+.nav-menu nav ul li a{
+    padding: 8px 25px;
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    transition: 0.3s;
+    animation: nav-menu 1s ease forwards;
+    animation-delay: calc(0.2s * var(--i));
+    opacity: 0;
+}
+.nav-menu nav ul li a:hover{
+    color: var(--menu-hover-color);
+}
+.nav-menu{
+    display: flex;
+}
+.mobile-menu-btn{
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    box-shadow: var(--mobile-menu-shadow);
+    padding: 8px 15px;
+    border-radius: 10px;
+    display: none;
+    color: var(--white-color);
+}
+/* HEADER SECTION END */
+
+/* HERO SECTION START */
+.hero-section{
+
+}
+.hero-row{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding:80px 30px;
+    /* margin: 0 50px; */
+    /* gap: 50px; */
+    
+}
+.hero-left{
+    width: 65%;
+    align-self: center;
+}
+.hero-right{
+    width: 35%;
+    margin-left: 50px;
+}
+.hero-right img{
+    border-radius: 50%;
+    animation: zoomIn 1s ease forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    /* width: 100%;
+    max-width: initial; */
+}
+.hero-left .details h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+.hero-left .details h1{
+    font-size: 75px;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+.hero-left .details h3 span{
+    color: var(--span);
+}
+.hero-left .details p{
+    width: 442px;
+    animation: slideleftp 1s ease forwards;
+    opacity: 0;
+    animation-duration: 1.2s;
+}
+.hero-left .details .social-icons i{
+    background-color: var(--white-color);
+    display: inline-block;
+    color: var(--black-color);
+    padding: 10px 12px;
+    font-size: 24px;
+    border-radius: 8px;
+    margin-top: 15px;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+.hero-left .details .social-icons i:hover{
+    background: transparent;
+    color: var(--menu-hover-color);
+}
+/* HERO SECTION END */
+
+
+
+
+
+
+/*=============ANIMATION==================*/
+@keyframes nav-menu{
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes slideleftp{
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes zoomIn{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
