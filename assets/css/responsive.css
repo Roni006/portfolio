@@ -1,3 +1,14 @@
+@media(max-width: 1080px){
+    .hero-row{
+        flex-wrap: wrap;
+    }
+    .hero-right img{
+        max-width: initial;
+        /* position: absolute; */
+        margin-top: 60px;
+    }
+}
+
 @media(max-width: 850px){
     .nav-menu nav ul li a{
         display: none;
@@ -5,4 +16,106 @@
     .mobile-menu-btn{
         display: block;
     }
+}
+
+@media(max-width: 685px){
+    .hero-left .details h1{
+        font-size: 60px;
+    }
+    .hero-left .details h3{
+        font-size: 25px;
+    }
+  
+}
+@media(max-width: 575px){
+    .hero-left .details h3{
+        font-size: 22px;
+    }
+    .hero-left .details h1{
+        font-size: 55px;
+    }
+    .hero-right img{
+        /* width: 70%; */
+        text-align: center;
+        /* position: absolute; */
+        display: block;
+        margin: auto;
+        width: 395px;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 530px){
+    .hero-left .details h1{
+        font-size: 50px;
+    }
+    .hero-right{
+        
+        margin-left: 25px;
+    }
+
+}
+@media(max-width: 490px){
+    .hero-left .details h1{
+        font-size: 45px;
+    }
+    .hero-left .details h3{
+        font-size: 18px;
+    }
+    .hero-right{
+        margin-left: 6px;
+    }
+}
+@media(max-width: 450px){
+    .hero-left .details p{
+        font-size: 16px;
+        width: 365px;
+        
+        margin-top: 20px;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .hero-left .details h1{
+        font-size: 40px;
+        
+    }
+    .hero-left .details .social-icons{
+        width: 300px;
+        text-align: center;
+    }
+    .hero-right{
+        margin-left: 25px; 
+    }
+    .hero-right img{
+        width: 300px;
+    }
+}
+@media(max-width: 375px){
+    .hero-left .details h1{
+        font-size: 30px;
+    }
+    .hero-left .details h3{
+        font-size: 15px;
+        width: 200px;
+    }
+    .hero-right{
+        margin-left: 1px; 
+    }
+    .hero-left .details  p{
+        width: 305px;
+    }
+    .hero-left{
+        /* text-align: center; */
+    
+    }
+    /* .hero-left .details .normal{
+        margin-left: 48px;
+    }
+    .hero-left .details .exceptional{
+        margin-left: 48px;
+    }
+    .hero-left .details h1{
+        margin-left: 44px;
+        width: 200px;
+    } */
 }

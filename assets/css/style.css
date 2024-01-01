@@ -86,7 +86,7 @@ img{
 
 /* HERO SECTION START */
 .hero-section{
-
+    overflow: hidden;
 }
 .hero-row{
     display: flex;
